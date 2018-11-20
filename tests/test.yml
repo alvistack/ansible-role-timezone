@@ -32,16 +32,8 @@
 - hosts: all
   remote_user: root
   tasks:
-    - name: locale --all-timezone
-      command: locale --all-timezone
-      register: locale_all_timezone_result
-      changed_when: locale_all_timezone_result.rc != 0
-
-    - name: su -l -s /bin/bash -c 'locale'
-      shell: |
-        su -l -s /bin/bash -c 'locale'
-      args:
-        warn: false
-      register: locale_result
-      changed_when: locale_result.rc != 0
-      failed_when: "'LANG=en_US.UTF-8' not in locale_result.stdout"
+    - name: date
+      command: date
+      register: date_result
+      changed_when: date_result.rc != 0
+      failed_when: "'UTC' not in date_result.stdout"
