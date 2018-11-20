@@ -32,6 +32,12 @@
 - hosts: all
   remote_user: root
   tasks:
+    - name: check /etc/localtime
+      file:
+        src: "/usr/share/zoneinfo/Etc/UTC"
+        dest: "/etc/localtime"
+        state: "link"
+
     - name: date
       command: date
       register: date_result

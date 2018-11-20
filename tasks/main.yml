@@ -47,3 +47,12 @@
 - name: timedatectl set-timezone
   timezone:
     name: "{{ timezone }}"
+  tags: timezone
+
+- name: symlink /etc/localtime
+  file:
+    src: "/usr/share/zoneinfo/{{ timezone }}"
+    dest: "/etc/localtime"
+    state: "link"
+    force: "yes"
+  tags: timezone
