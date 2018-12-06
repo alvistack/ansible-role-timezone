@@ -40,6 +40,6 @@
 
     - name: date
       command: date
-      register: date_result
-      changed_when: date_result.rc != 0
-      failed_when: "'UTC' not in date_result.stdout"
+      register: result
+      changed_when: result is not succeeded
+      failed_when: "'UTC' not in result.stdout"
