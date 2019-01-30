@@ -1,4 +1,4 @@
-# Ansible Role for Timezones
+# Ansible Role for Timezone
 
 [![Travis](https://img.shields.io/travis/alvistack/ansible-role-timezone.svg)](https://travis-ci.org/alvistack/ansible-role-timezone)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-timezone.svg)](https://github.com/alvistack/ansible-role-timezone)
