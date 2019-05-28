@@ -16,11 +16,13 @@
 
 - hosts: all
   remote_user: root
+  become: true
   roles:
     - role: timezone
 
 - hosts: all
   remote_user: root
+  become: true
   tasks:
     - name: check /etc/localtime
       file:
