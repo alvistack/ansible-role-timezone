@@ -19,19 +19,3 @@
   become: true
   roles:
     - role: timezone
-
-- hosts: all
-  remote_user: root
-  become: true
-  tasks:
-    - name: check /etc/localtime
-      file:
-        src: "/usr/share/zoneinfo/Etc/UTC"
-        dest: "/etc/localtime"
-        state: "link"
-
-    - name: date
-      command: date
-      register: result
-      changed_when: result is not succeeded
-      failed_when: "'UTC' not in result.stdout"
