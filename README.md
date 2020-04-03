@@ -1,6 +1,6 @@
 # Ansible Role for Timezone
 
-[![Travis](https://img.shields.io/travis/alvistack/ansible-role-timezone.svg)](https://travis-ci.org/alvistack/ansible-role-timezone)
+[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-timezone.svg)](https://travis-ci.com/alvistack/ansible-role-timezone)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-timezone.svg)](https://github.com/alvistack/ansible-role-timezone)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-timezone.svg)](https://github.com/alvistack/ansible-role-timezone/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.timezone-blue.svg)](https://galaxy.ansible.com/alvistack/timezone)
