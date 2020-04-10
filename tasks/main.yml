@@ -53,10 +53,12 @@
     name: "{{ timezone }}"
   tags: timezone
 
-- name: symlink /etc/localtime
+- name: symlink files
   file:
-    src: "/usr/share/zoneinfo/{{ timezone }}"
-    dest: "/etc/localtime"
-    state: "link"
-    force: true
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    force: "{{ item.force | default(true) }}"
+    state: "{{ item.state | default('link') }}"
+  loop:
+    - { src: "/usr/share/zoneinfo/{{ timezone }}", dest: "/etc/localtime" }
   tags: timezone
