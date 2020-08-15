@@ -22,6 +22,7 @@
       file:
         src: "/usr/share/zoneinfo/Etc/UTC"
         dest: "/etc/localtime"
+        mode: "0644"
         state: "link"
 
     - name: date

@@ -58,6 +58,7 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
     force: "{{ item.force | default(true) }}"
+    mode: "{{ item.mode | default('0644') }}"
     state: "{{ item.state | default('link') }}"
   loop:
     - { src: "/usr/share/zoneinfo/{{ timezone }}", dest: "/etc/localtime" }
