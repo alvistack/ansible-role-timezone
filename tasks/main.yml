@@ -48,6 +48,8 @@
 - name: timedatectl set-timezone
   timezone:
     name: "{{ timezone }}"
+  changed_when: false
+  ignore_errors: true
 
 - name: symlink files
   file:
