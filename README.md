@@ -1,9 +1,13 @@
 # Ansible Role for Timezone
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-timezone/master)](https://gitlab.com/alvistack/ansible-role-timezone/-/pipelines)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-timezone.svg)](https://github.com/alvistack/ansible-role-timezone/releases)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-timezone.svg)](https://github.com/alvistack/ansible-role-timezone/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.timezone-blue.svg)](https://galaxy.ansible.com/alvistack/timezone)
+[![Gitlab pipeline
+status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-timezone/master)](https://gitlab.com/alvistack/ansible-role-timezone/-/pipelines)
+[![GitHub
+release](https://img.shields.io/github/release/alvistack/ansible-role-timezone.svg)](https://github.com/alvistack/ansible-role-timezone/releases)
+[![GitHub
+license](https://img.shields.io/github/license/alvistack/ansible-role-timezone.svg)](https://github.com/alvistack/ansible-role-timezone/blob/master/LICENSE)
+[![Ansible
+Role](https://img.shields.io/badge/galaxy-alvistack.timezone-blue.svg)](https://galaxy.ansible.com/alvistack/timezone)
 
 Ansible Role for Timezone Management.
 
@@ -39,7 +43,8 @@ This role could simply deploy to `localhost` as below:
 ## License
 
   - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+  - Docs released under [CC
+    BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
