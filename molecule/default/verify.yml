@@ -19,14 +19,14 @@
   become: true
   tasks:
     - name: check /etc/localtime
-      file:
+      ansible.builtin.file:
         src: "/usr/share/zoneinfo/Etc/UTC"
         dest: "/etc/localtime"
         mode: "0644"
         state: "link"
 
     - name: date
-      command: date
+      ansible.builtin.command: date
       register: result
       changed_when: result is not succeeded
       failed_when: "'UTC' not in result.stdout"
