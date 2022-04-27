@@ -20,5 +20,5 @@
   tasks:
     - name: include role
       ansible.builtin.include_role:
-        name: timezone
-      tags: timezone
+        name: alvistack.timezone
+      tags: alvistack.timezone
