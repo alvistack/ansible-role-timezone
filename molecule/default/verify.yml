@@ -27,7 +27,8 @@
         state: "link"
 
     - name: date
-      ansible.builtin.command: date
+      ansible.builtin.command:
+        cmd: date
       register: result
       changed_when: result is not succeeded
       failed_when: "'UTC' not in result.stdout"
