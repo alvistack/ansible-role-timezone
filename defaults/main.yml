@@ -15,4 +15,4 @@
 # limitations under the License.
 
 # Set the system time zone to the specified value.
-timezone: "Etc/UTC"
+timezone: Etc/UTC

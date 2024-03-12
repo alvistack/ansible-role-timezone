@@ -1,5 +1,4 @@
 ---
-
 # Copyright 2024 Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,10 +20,10 @@
   tasks:
     - name: check /etc/localtime
       ansible.builtin.file:
-        src: "/usr/share/zoneinfo/Etc/UTC"
-        dest: "/etc/localtime"
+        src: /usr/share/zoneinfo/Etc/UTC
+        dest: /etc/localtime
         mode: "0644"
-        state: "link"
+        state: link
 
     - name: date
       ansible.builtin.command:
